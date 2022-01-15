@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.box {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* common things */
+.main_menu {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.info h2 {
+    font-family: 'Rubik Beastly', cursive;
+    font-weight: 400;
+}
+
+.menu ul {
+    display: flex;
+
+}
+
+.menu ul li a {
+    padding: 10px;
+    text-transform: capitalize;
+    color: black;
+    font-size: 20px;
+
+
+}
+
+/* ======================
+=========================== */
+.mid-part {
+    display: flex;
+}
+
+.written_part {
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.written_part h1 {
+    font-size: 50px;
+
+}
+
+.written_part p {
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+    padding-top: 20px;
+}
+
+.button a {
+    padding: 10px 20px 10px 20px;
+    background-color: cadetblue;
+    border-radius: 15px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+
+}
+
+.camera img {
+    width: 100%;
+    border: 1px solid rgb(201, 190, 190);
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.camera img:hover {
+    transform: rotate(360deg);
+}
+
+/* ======================================
+=
+======================================= */
+.text-collection {
+    display: flex;
+    justify-items: center;
+}
+
+.text-collection h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.Collection {
+    padding-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-bottom: 20px;
+}
+
+.p1 {
+    box-shadow: grey 2px 10px 50px 10px;
+
+}
+
+.img-part {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.img-part img {
+    width: 100%;
+    transition: 1s;
+
+}
+
+.img-part img:hover {
+    transform: scale(1.5);
+}
+
+.text-part {
+    padding-left: 15px;
+}
+
+.text-part h2,
+h3,
+p {
+    padding-bottom: 5px;
+}
+
+.text-part h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.text-part p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.see {
+    position: relative;
+}
+
+.see2 {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+/* ============================
+========================= */
+.full-bg {
+    display: flex;
+
+}
+
+#contact {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.text-icon h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.main-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+
+.icon1 {
+    padding-right: 20px;
+}
+
+.icon1 i {
+    padding-left: 30px;
+    font-size: 80px;
+    padding-bottom: 15px;
+}
+
+.contact-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.btn {
+    padding: 10px 143px 10px 126px;
+}
+
+/* ===========================
+========================= */
+.bg-color {
+    background-color: cadetblue;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#footer h1 {
+    font-family: 'Rubik Beastly', cursive;
+    font-weight: 400;
+}
+
+/* ============================
+=========media queries========== */
+/* mobile==================== */
+@media(min-width:330px) and (max-width:767px) {
+    .mid-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Collection {
+        padding-top: 60px;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        padding-bottom: 20px;
+    }
+
+    .full-bg {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .see {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Tablets=========================
+================================== */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .mid-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Collection {
+        padding-top: 60px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        padding-bottom: 20px;
+    }
+
+    .full-bg {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .see {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+}
